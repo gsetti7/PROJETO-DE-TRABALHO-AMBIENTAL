@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Educa&ccedil;&atilde;;o Ambiental</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: left;
+            padding: 1.4%;
+            anchor-name: --cabeça;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2e8b57;
+        }
+
+        h3 {
+            color: rgb(9, 116, 9);
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 46%;
+            position: static;
+        }
+
+        .true {
+            background-color: rgb(0, 187, 0);
+            color: white;
+        }
+
+        .wrong {
+            background-color: red;
+        }
+
+        .option {
+            background-color: rgba(0, 0, 0, 0.07);
+            padding: 20px 30px;
+            margin: 2px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            width: 30%;
+            transition: opacity 0.3s;
+        }
+
+        .option:hover {
+            opacity: 0.7;
+        }
+
+        .pergunta-quiz {
+            width: 500px;
+        }
+
+        .imagem1 {
+            width: 50%;
+            height: 51%;
+            position: absolute;
+            top: 20%;
+            right: 1%;
+        }
+
+        .link1 {
+            position: absolute;
+            top: 72%;
+            right: 46%;
+        }
+
+        .Outros-tópicos {
+            position: absolute;
+            position-anchor: --cabeça;
+            position-area: top center;
+            right: 47%;
+        }
+
+        .linha-vertical {
+            border-left: 2px solid #ffffff;
+            height: 17vh;
+            margin: 0 20px;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            position-anchor: --cabeça;
+            position-area: top center;
+            right: 60%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Educa&ccedil;&atilde;o Ambiental </h1>
+        <p>Cuidar do planeta &eacute; responsabilidade de todos!</p>
+        <h1 class="Outros-tópicos">Outros tópicos:</h1>
+    </header>
+
+    <section>
+        <h2>O que &eacute; Educa&ccedil;&atilde;o Ambiental?</h2>
+        <div class="card" class="quiz-container">
+            <p>
+                Educa&ccedil;&atilde;o Ambiental &eacute; o processo de conscientiza&ccedil;&atilde;o das pessoas
+                sobre a import&acirc;ncia de preservar o meio ambiente,
+                promovendo atitudes sustent&aacute;veis no dia a dia.
+            </p>
+        </div>
+
+        <h2>Como podemos ajudar?</h2>
+
+        <div class="card">
+            ️ Separar o lixo corretamente.
+        </div>
+
+        <div class="card">
+            Economizar &aacute;gua.
+        </div>
+
+        <div class="card">
+            Plantar &aacute;rvores.
+        </div>
+
+        <div class="card">
+            Economizar energia el&eacute;trica.
+        </div>
+
+        <h2>O que n&atilde;o deveria ser feito:</h2>
+        <div class="card">
+            Jogar lixo nas ruas ou em rios.
+        </div>
+
+        <div class="card">
+            Desmatar ou queimar &aacute;reas verdes.
+        </div>
+
+        <div class="card">
+            Usar pl&aacute;stico descart&aacute;vel em excesso.
+        </div>
+
+        <div class="card">
+            Descartar &oacute;leo de cozinha na pia.
+        </div>
+
+        <h1 class="pergunta-quiz">
+            Com base no que aprendemos anteriormente, responda o quiz:
+        </h1>
+        <div id="quiz-container">
+            <h3>
+                O que devemos fazer para combater a escassez de &aacute;gua?
+            </h3>
+            <button class="option" onclick="checkAnswer(this)" data-correct="true" onclick="selecionar(this)">
+                Desligar o chuveiro assim que terminar o banho.
+            </button>
+            <br>
+            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+                Manter a torneira ligada depois do uso.
+            </button>
+            <br>
+            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+                Surfar na praia.
+            </button>
+            <br>
+            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+                Levar o cachorro pra passear.
+            </button>
+
+        </div>
+
+        <div>
+            <img src="imagens/educação ambiental.jpg" class="imagem1">
+        </div>
+
+        <a href="https://pt.wikipedia.org/wiki/Educação_ambiental" class="link1" target="_blank">
+            Saiba mais
+        </a>
+    </section>
+
+    <footer>
+        <p>Site criado por Os Desalmados - 2026</p>
+    </footer>
+
+    <script> src = "script.js"
+
+        function checkAnswer(button) {
+            const isCorrect = button.getAttribute('data-correct') === 'true';
+
+            if (isCorrect) {
+                button.classList.add('true');
+                //alert("Parabéns, você acertou!");
+
+            } else {
+                button.classList.add('wrong');
+                //alert(Ops, resposta errada.);
+
+            }
+        }
+    </script>
+    <div class="linha-vertical"></div>
+</body>
+
+</html>
