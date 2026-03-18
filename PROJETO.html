@@ -50,14 +50,6 @@
             position: static;
         }
 
-        .true {
-            background-color: rgb(0, 187, 0);
-            color: white;
-        }
-
-        .wrong {
-            background-color: red;
-        }
 
         .option {
             background-color: rgba(0, 0, 0, 0.07);
@@ -68,6 +60,15 @@
             border-radius: 15px;
             width: 30%;
             transition: opacity 0.3s;
+        }
+
+        .true {
+            background-color: rgb(0, 187, 0);
+            color: white;
+        }
+
+        .wrong {
+            background-color: red;
         }
 
         .option:hover {
@@ -173,19 +174,19 @@
             <h3>
                 O que devemos fazer para combater a escassez de &aacute;gua?
             </h3>
-            <button class="option" onclick="checkAnswer(this)" data-correct="true" onclick="selecionar(this)">
+            <button class="option" onclick="checkAnswer(this)" data-correct="true">
                 Desligar o chuveiro assim que terminar o banho.
             </button>
             <br>
-            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+            <button class="option" onclick="checkAnswer(this)" data-correct="false">
                 Manter a torneira ligada depois do uso.
             </button>
             <br>
-            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+            <button class="option" onclick="checkAnswer(this)" data-correct="false">
                 Surfar na praia.
             </button>
             <br>
-            <button class="option" onclick="checkAnswer(this)" data-correct="false" onclick="selecionar(this)">
+            <button class="option" onclick="checkAnswer(this)" data-correct="false">
                 Levar o cachorro pra passear.
             </button>
 
