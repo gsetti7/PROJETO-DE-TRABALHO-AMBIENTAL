@@ -10,13 +10,13 @@
             background-color: #2e8b57;
             color: white;
             text-align: center;
-            padding: 1%;
-            font-size: 200%;
+            padding: 5%;
         }
 
         header {
             background-color: #2e8b57;
             color: white;
+
             display: flex;
             align-items: center;
             padding: 2%;
@@ -27,7 +27,7 @@
             padding: 1.5% 0;
             display: flex;
             justify-content: center; /* Centers the items horizontally */
-            gap: 3%; 
+            gap: 3%; /* Adds space between the navigation links */
         }
 
         .main-nav a {
@@ -46,6 +46,7 @@
         .logo {
             width: 10%;
             height: auto;
+
             margin-right: 2.5%;
         }
 
@@ -64,12 +65,20 @@
             font-size: 150%;
         }
 
-<<<<<<< HEAD
-        .texto-abaixo {
-            margin-top: 1.25rem; 
-            font-size: 125%;
+         .titulo1{
+            width: 30%;
         }
-=======
 
-        
->>>>>>> 4d4160acdaea81f853d9be945a6adefc6c412929
+        .titulo2{
+            width: 70%;
+        }
+
+        .parteescrita{
+            width: 40%;
+        }
+
+        .mensagem-contato {
+            width: 40%;             /* Tamanho de ícone costuma ser menor */
+            height: auto;
+            
+        }
