@@ -73,6 +73,7 @@
 
         .titulo1 {
             width: 30%;
+            margin-left: 2%;
         }
 
         .titulo2 {
@@ -81,6 +82,7 @@
 
         .parteescrita {
             width: 40%;
+            margin-left: 2%;
         }
 
         .quizbutton {
