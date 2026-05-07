@@ -72,3 +72,25 @@
         .parteescrita{
             width: 40%;
         }
+
+         .ver-noticia {
+            cursor: pointer;
+        }
+
+        .ver-noticia:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .ver-noticia a:link,
+        .ver-noticia a:active,
+        .ver-noticia a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+                .mover-noticia {
+            margin-left: 50%;
+            margin-top: 5%;
+            margin-bottom: 0;
+        }
