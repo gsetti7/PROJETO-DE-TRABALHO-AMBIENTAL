@@ -6,21 +6,21 @@ botoes.forEach(botao => {
 
         if (taCerto) {
             this.classList.add('correto');
-            console.log("Acertou!");
         } else {
             this.classList.add('errado');
-            console.log("Errou!");
         }
-
 
         botoes.forEach(b => {
             b.disabled = true;
-
-
-            b.style.opacity = "0.5";
             b.style.cursor = "not-allowed";
-        });
 
-        console.log("Botão clicado: " + this.innerText + ". Todos os botões bloqueados.");
+            const bTaCerto = b.getAttribute('data-correct') === 'true';
+
+            if (b === this || bTaCerto) {
+                b.style.opacity = "1";
+            } else {
+                b.style.opacity = "0.4";
+            }
+        });
     });
 });

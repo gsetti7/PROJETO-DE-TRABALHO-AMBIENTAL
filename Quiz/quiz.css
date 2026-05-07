@@ -13,9 +13,11 @@ button:hover {
 }
 
 .correto {
-    background-color: green;
+    background-color: rgb(0, 255, 0);
+    border: 1px solid black;
 }
 
 .errado {
     background-color: red;
+    border: 1px solid black;
 }
