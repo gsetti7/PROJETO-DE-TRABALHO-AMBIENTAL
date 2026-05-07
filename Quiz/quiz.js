@@ -9,7 +9,6 @@ botoes.forEach(botao => {
         const containerPai = this.closest('.divQuiz');
         const botoesDesteQuiz = containerPai.querySelectorAll('.btnQuiz');
 
-
         if (taCerto) {
             this.classList.add('correto');
             pontosMarcados++;
@@ -18,7 +17,6 @@ botoes.forEach(botao => {
         }
 
         perguntasRespondidas++;
-
 
         botoesDesteQuiz.forEach(b => {
             b.disabled = true;
@@ -37,6 +35,9 @@ botoes.forEach(botao => {
 
             divResultado.style.display = "block";
             spanPontos.innerText = pontosMarcados;
+
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     });
 });
