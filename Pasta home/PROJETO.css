@@ -77,22 +77,81 @@
             width: 40%;
         }
 
-        .quizbutton{
-            background-color: #3cb371; /* A slightly different green for contrast */
-            padding-bottom: 1.5%;
-            padding-left: 1.9%;
-            padding-right: 1.9%;
-            padding-top: 1.5%;
-            justify-content: center; 
-            border-radius: 20%;
-            color: white;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-        }
+        .quizbutton {
+ position: relative;
+ overflow: hidden;
+ border: 1px solid #18181a;
+ color: #18181a;
+ display: inline-block;
+ font-size: 15px;
+ line-height: 15px;
+ padding: 18px 18px 17px;
+ text-decoration: none;
+ cursor: pointer;
+ background: #fff;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+}
 
+.quizbutton span:first-child {
+ position: relative;
+ transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 10;
+}
 
+.quizbutton span:last-child {
+ color: white;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 100;
+ opacity: 0;
+ top: 50%;
+ left: 50%;
+ transform: translateY(225%) translateX(-50%);
+ height: 14px;
+ line-height: 13px;
+}
 
-        .quizbutton:hover {
-            background-color: #2e8b57; 
-         
-        }
+.quizbutton:after {
+ content: "";
+ position: absolute;
+ bottom: -50%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #2e8b57;
+ color: white;
+ transform-origin: bottom center;
+ transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ transform: skewY(9.3deg) scaleY(0);
+ z-index: 50;
+}
+
+.quizbutton:hover:after {
+ transform-origin: bottom center;
+ transform: skewY(9.3deg) scaleY(2);
+}
+
+.quizbutton:hover span:last-child {
+ transform: translateX(-50%) translateY(-50%);
+ opacity: 1;
+ transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.textoquiz{
+    display: absolute;
+    bottom: 10%;
+    
+}
+
+.p1 {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+}
