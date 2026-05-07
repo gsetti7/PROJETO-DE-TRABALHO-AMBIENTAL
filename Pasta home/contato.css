@@ -10,24 +10,43 @@
             background-color: #2e8b57;
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 1%;
+            font-size: 200%;
         }
 
         header {
             background-color: #2e8b57;
             color: white;
-
             display: flex;
             align-items: center;
+            padding: 2%;
+        }
 
-            padding: 20px;
+        .main-nav {
+            background-color: #3cb371; /* A slightly different green for contrast */
+            padding: 1.5% 0;
+            display: flex;
+            justify-content: center; /* Centers the items horizontally */
+            gap: 3%; 
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1% 2%;
+            border-radius: 0.5%;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .main-nav a:hover {
+            background-color: #2e8b57; /* Darker green on hover */
         }
 
         .logo {
             width: 10%;
             height: auto;
-
-            margin-right: 25px;
+            margin-right: 2.5%;
         }
 
         .textos {
@@ -45,4 +64,7 @@
             font-size: 150%;
         }
 
-        
+        .texto-abaixo {
+            margin-top: 1.25rem; 
+            font-size: 125%;
+        }
