@@ -13,6 +13,7 @@
             padding: 5%;
         }
 
+
         header {
             background-color: #2e8b57;
             color: white;
@@ -21,8 +22,7 @@
             align-items: center;
             padding: 2%;
         }
-
-        .main-nav {
+ .main-nav {
             background-color: #3cb371; /* A slightly different green for contrast */
             padding: 1.5% 0;
             display: flex;
