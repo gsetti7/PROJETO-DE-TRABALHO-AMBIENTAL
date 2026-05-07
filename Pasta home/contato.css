@@ -82,3 +82,26 @@
             height: auto;
             
         }
+
+        .contatos {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .contato-item{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 150%;
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: 2px solid #3cb371;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .contato-item img{
+            width: 100px;
+            height: auto;
+        }
