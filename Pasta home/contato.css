@@ -11,6 +11,7 @@
             color: white;
             text-align: center;
             padding: 5%;
+            margin-top: 5%;
         }
 
         header {
@@ -31,12 +32,12 @@
         }
 
         .main-nav a {
-            color: white;
+            color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
             padding: 1% 2%;
             border-radius: 0.5%;
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            transition: background-color 0.3s ease;
         }
 
         .main-nav a:hover {
@@ -78,7 +79,43 @@
         }
 
         .mensagem-contato {
-            width: 40%;             /* Tamanho de ícone costuma ser menor */
+            width: 40%;             
             height: auto;
             
+        }
+
+        .contatos {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .contato-item{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 150%;
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: 2px solid #3cb371;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .contato-item img{
+            width: 100px;
+            height: auto;
+        }
+
+        .mapa-container {
+        width: 100%;
+        line-height: 0;
+        }
+
+        .horario {
+             color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1% 2%;
+            border-radius: 0.5%;
         }
