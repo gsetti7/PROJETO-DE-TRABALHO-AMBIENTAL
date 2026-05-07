@@ -104,3 +104,25 @@ button:hover {
     display: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+ .ver-noticia {
+            cursor: pointer;
+        }
+
+        .ver-noticia:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .ver-noticia a:link,
+        .ver-noticia a:active,
+        .ver-noticia a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+                .mover-noticia {
+            margin-left: 60%;
+            margin-top: 5%;
+            margin-bottom: 0;
+        }
