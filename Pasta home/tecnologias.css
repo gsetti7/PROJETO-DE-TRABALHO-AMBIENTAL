@@ -1,0 +1,121 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+        }
+
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 5%;
+            margin-top: 5%;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            padding: 2%;
+        }
+
+        .main-nav {
+            background-color: #3cb371; /* A slightly different green for contrast */
+            padding: 1.5% 0;
+            display: flex;
+            justify-content: center; /* Centers the items horizontally */
+            gap: 3%; /* Adds space between the navigation links */
+        }
+
+        .main-nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1% 2%;
+            border-radius: 0.5%;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            background-color: #2e8b57; /* Darker green on hover */
+        }
+
+        .logo {
+            width: 10%;
+            height: auto;
+
+            margin-right: 2.5%;
+        }
+
+        .textos {
+            display: flex;
+            flex-direction: column; /* deixa um texto embaixo do outro */
+        }
+
+        .textos h1 {
+             margin: 0;
+            font-size: 200%;
+        }
+
+        .textos p {
+            margin-top: 0.625rem; 
+            font-size: 150%;
+        }
+
+         .titulo1{
+            width: 30%;
+        }
+
+        .titulo2{
+            width: 70%;
+        }
+
+        .parteescrita{
+            width: 40%;
+        }
+
+        .mensagem-contato {
+            width: 40%;             
+            height: auto;
+            
+        }
+
+        .contatos {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .contato-item{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 150%;
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: 2px solid #3cb371;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .contato-item img{
+            width: 100px;
+            height: auto;
+        }
+
+        .mapa-container {
+        width: 100%;
+        line-height: 0;
+        }
+
+        .horario {
+             color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1% 2%;
+            border-radius: 0.5%;
+        }
