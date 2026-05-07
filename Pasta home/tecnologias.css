@@ -24,11 +24,14 @@
         }
 
         .main-nav {
-            background-color: #3cb371; /* A slightly different green for contrast */
+            background-color: #3cb371;
+            /* A slightly different green for contrast */
             padding: 1.5% 0;
             display: flex;
-            justify-content: center; /* Centers the items horizontally */
-            gap: 3%; /* Adds space between the navigation links */
+            justify-content: center;
+            /* Centers the items horizontally */
+            gap: 3%;
+            /* Adds space between the navigation links */
         }
 
         .main-nav a {
@@ -41,7 +44,8 @@
         }
 
         .main-nav a:hover {
-            background-color: #2e8b57; /* Darker green on hover */
+            background-color: #2e8b57;
+            /* Darker green on hover */
         }
 
         .logo {
@@ -53,35 +57,36 @@
 
         .textos {
             display: flex;
-            flex-direction: column; /* deixa um texto embaixo do outro */
+            flex-direction: column;
+            /* deixa um texto embaixo do outro */
         }
 
         .textos h1 {
-             margin: 0;
+            margin: 0;
             font-size: 200%;
         }
 
         .textos p {
-            margin-top: 0.625rem; 
+            margin-top: 0.625rem;
             font-size: 150%;
         }
 
-         .titulo1{
+        .titulo1 {
             width: 30%;
         }
 
-        .titulo2{
+        .titulo2 {
             width: 70%;
         }
 
-        .parteescrita{
+        .parteescrita {
             width: 40%;
         }
 
         .mensagem-contato {
-            width: 40%;             
+            width: 40%;
             height: auto;
-            
+
         }
 
         .contatos {
@@ -90,7 +95,7 @@
             padding: 40px 0;
         }
 
-        .contato-item{
+        .contato-item {
             display: flex;
             align-items: center;
             gap: 30px;
@@ -99,51 +104,45 @@
             padding: 20px 40px;
             border-radius: 15px;
             border: 2px solid #3cb371;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         }
 
-        .contato-item img{
+        .contato-item img {
             width: 100px;
             height: auto;
         }
 
         .mapa-container {
-        width: 100%;
-        line-height: 0;
+            width: 100%;
+            line-height: 0;
         }
 
         .horario {
-             color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
             padding: 1% 2%;
             border-radius: 0.5%;
         }
 
-        div.box{
-          	width: 150px;
-	          display: inline-block;
-            margin-left: 50px;
+        .box {
+            display: flex;
+            flex-direction: row;
+            gap: 1%;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-         .ver-noticia {
-            cursor: pointer;
+        .box img {
+            width: 15%;
+            height: 25vh;
+            object-fit: cover;
+            object-position: center;
         }
 
-        .ver-noticia:hover {
-            text-decoration: underline;
-            color: white;
-        }
-
-        .ver-noticia a:link,
-        .ver-noticia a:active,
-        .ver-noticia a:visited {
-            color: white;
-            text-decoration: none;
-        }
-
-                .mover-noticia {
-            margin-left: 50%;
-            margin-top: 5%;
-            margin-bottom: 0;
+        @media (max-width: 600px) {
+            .box img {
+                width: 15%;
+                height: 10vh;
+            }
         }
