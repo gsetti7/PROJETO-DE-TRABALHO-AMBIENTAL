@@ -1,15 +1,21 @@
 button {
-    padding: 2% 10%;
+    padding: 1.5% 3%;
     transition: transform 0.25s, opacity 0.1s;
     background-color: hsl(0, 0%, 95%);
     margin: 1% 0% 0.5% 1.5%;
     border-radius: 1%;
     cursor: pointer;
+    width: 30%;
 }
 
 button:hover {
     transform: scale(1.08);
     opacity: 0.7;
+}
+
+.btnQuiz:disabled {
+    color: black;
+    cursor: not-allowed;
 }
 
 .correto {
