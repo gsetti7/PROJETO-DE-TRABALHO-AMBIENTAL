@@ -41,3 +41,10 @@ botoes.forEach(botao => {
         }
     });
 });
+
+document.getElementById('btnComeçar').addEventListener('click', function () {
+    document.getElementById('inicioQuiz').style.display = 'none';
+    document.getElementById('sessaoQuiz').style.display = 'block';
+
+    window.scrollTo(0, 0);
+});
