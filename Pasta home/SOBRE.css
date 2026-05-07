@@ -1,4 +1,4 @@
-body {
+          body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -12,14 +12,17 @@ body {
             text-align: center;
             padding: 5%;
         }
+
         header {
             background-color: #2e8b57;
             color: white;
+
             display: flex;
             align-items: center;
             padding: 2%;
         }
-       .main-nav {
+
+        .main-nav {
             background-color: #3cb371; /* A slightly different green for contrast */
             padding: 1.5% 0;
             display: flex;
@@ -47,8 +50,6 @@ body {
             margin-right: 2.5%;
         }
 
-
-
         .textos {
             display: flex;
             flex-direction: column; /* deixa um texto embaixo do outro */
@@ -62,4 +63,12 @@ body {
         .textos p {
             margin-top: 0.625rem; 
             font-size: 150%;
+        }
+
+         .titulo1{
+            width: 30%;
+        }
+
+        .parteescrita{
+            width: 40%;
         }
