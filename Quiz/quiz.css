@@ -5,12 +5,17 @@ button {
     margin: 1% 0% 0.5% 1.5%;
     border-radius: 1%;
     cursor: pointer;
-    width: 28%;
+    width: 30%;
 }
 
 button:hover {
     transform: scale(1.08);
     opacity: 0.7;
+}
+
+.btnQuiz:disabled {
+    color: black;
+    cursor: not-allowed;
 }
 
 .correto {
