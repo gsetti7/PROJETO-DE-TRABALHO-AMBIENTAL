@@ -1,8 +1,10 @@
-const botoes = document.querySelectorAll('.divQuiz .btnQuiz');
+const botoes = document.querySelectorAll('.btnQuiz');
 
 botoes.forEach(botao => {
     botao.addEventListener('click', function () {
         const taCerto = this.getAttribute('data-correct') === 'true';
+        const containerPai = this.closest('.divQuiz');
+        const botoesDesteQuiz = containerPai.querySelectorAll('.btnQuiz');
 
         if (taCerto) {
             this.classList.add('correto');
@@ -10,13 +12,11 @@ botoes.forEach(botao => {
             this.classList.add('errado');
         }
 
-        botoes.forEach(b => {
+        botoesDesteQuiz.forEach(b => {
             b.disabled = true;
             b.style.cursor = "not-allowed";
 
-            const bTaCerto = b.getAttribute('data-correct') === 'true';
-
-            if (b === this || bTaCerto) {
+            if (b === this) {
                 b.style.opacity = "1";
             } else {
                 b.style.opacity = "0.4";
