@@ -12,16 +12,13 @@ body {
             text-align: center;
             padding: 5%;
         }
-
         header {
             background-color: #2e8b57;
             color: white;
-
             display: flex;
             align-items: center;
             padding: 2%;
         }
-
        .main-nav {
             background-color: #3cb371; /* A slightly different green for contrast */
             padding: 1.5% 0;
@@ -52,8 +49,17 @@ body {
 
 
 
+        .textos {
+            display: flex;
+            flex-direction: column; /* deixa um texto embaixo do outro */
+        }
+
         .textos h1 {
              margin: 0;
             font-size: 200%;
         }
 
+        .textos p {
+            margin-top: 0.625rem; 
+            font-size: 150%;
+        }
