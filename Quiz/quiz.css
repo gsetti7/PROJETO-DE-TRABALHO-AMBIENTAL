@@ -35,12 +35,10 @@ footer {
     padding: 1% 2%;
     border-radius: 0.5%;
     transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .main-nav a:hover {
     background-color: #2e8b57;
-    /* Darker green on hover */
 }
 
 .logo {
