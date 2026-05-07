@@ -1,9 +1,9 @@
 button {
-    padding: 20px 100px;
+    padding: 2% 10%;
     transition: transform 0.25s, opacity 0.1s;
     background-color: hsl(0, 0%, 95%);
-    margin: 10px 0px 5px 15px;
-    border-radius: 10px;
+    margin: 1% 0% 0.5% 1.5%;
+    border-radius: 1%;
     cursor: pointer;
 }
 
