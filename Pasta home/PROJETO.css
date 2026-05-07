@@ -64,3 +64,15 @@
             margin-top: 0.625rem; 
             font-size: 150%;
         }
+
+         .titulo1{
+            width: 30%;
+        }
+
+        .titulo2{
+            width: 70%;
+        }
+
+        .parteescrita{
+            width: 40%;
+        }
