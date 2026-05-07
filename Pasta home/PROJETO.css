@@ -76,3 +76,23 @@
         .parteescrita{
             width: 40%;
         }
+
+        .quizbutton{
+            background-color: #3cb371; /* A slightly different green for contrast */
+            padding-bottom: 1.5%;
+            padding-left: 1.9%;
+            padding-right: 1.9%;
+            padding-top: 1.5%;
+            justify-content: center; 
+            border-radius: 20%;
+            color: white;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+
+
+        .quizbutton:hover {
+            background-color: #2e8b57; 
+         
+        }
