@@ -17,10 +17,13 @@ footer {
 header {
     background-color: #2e8b57;
     color: white;
-
     display: flex;
     align-items: center;
     padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .main-nav {
@@ -168,9 +171,8 @@ header {
 }
 
 .mover-noticia {
-    margin-left: 50%;
-    margin-top: 5%;
-    margin-bottom: 0;
+    text-align: right;
+    margin-left: auto;
 }
 
 .container {
