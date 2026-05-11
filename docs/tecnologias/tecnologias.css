@@ -175,7 +175,7 @@
 
         .container {
             width: 90%;
-            max-width: 70%;
+            max-width: 85%; /* Aumentado para permitir que o conteúdo chegue mais perto da borda esquerda */
             margin: auto;
             padding: 5% 0;
         }
@@ -264,4 +264,22 @@
 
 .botao-nav:hover {
     background-color: #3cb371;
+}
+
+.materia {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+.materia img {
+    width: 50%; 
+    max-width: 650px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.conteudo-texto {
+    flex: 1; 
 }
