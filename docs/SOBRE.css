@@ -1,96 +1,107 @@
           body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8f5;
-        }
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f0f8f5;
+          }
 
 
-        footer {
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 5%;
-        }
+          footer {
+              background-color: #2e8b57;
+              color: white;
+              text-align: center;
+              padding: 5%;
+          }
 
 
-        header {
-            background-color: #2e8b57;
-            color: white;
+          header {
+              background-color: #2e8b57;
+              color: white;
 
-            display: flex;
-            align-items: center;
-            padding: 2%;
-        }
- .main-nav {
-            background-color: #3cb371; /* A slightly different green for contrast */
-            padding: 1.5% 0;
-            display: flex;
-            justify-content: center; /* Centers the items horizontally */
-            gap: 3%; /* Adds space between the navigation links */
-        }
+              display: flex;
+              align-items: center;
+              padding: 2%;
+          }
 
-        .main-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 1% 2%;
-            border-radius: 0.5%;
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-        }
+          .main-nav {
+              background-color: #3cb371;
+              /* A slightly different green for contrast */
+              padding: 1.5% 0;
+              display: flex;
+              justify-content: center;
+              /* Centers the items horizontally */
+              gap: 3%;
+              /* Adds space between the navigation links */
+          }
 
-        .main-nav a:hover {
-            background-color: #2e8b57; /* Darker green on hover */
-        }
+          .main-nav a {
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+              padding: 1% 2%;
+              border-radius: 0.5%;
+              transition: background-color 0.3s ease;
+              /* Smooth transition for hover effect */
+          }
 
-        .logo {
-            width: 10%;
-            height: auto;
+          .main-nav a:hover {
+              background-color: #2e8b57;
+              /* Darker green on hover */
+          }
 
-            margin-right: 2.5%;
-        }
+          .logo {
+              width: 10%;
+              height: auto;
 
-        .textos {
-            display: flex;
-            flex-direction: column; /* deixa um texto embaixo do outro */
-        }
+              margin-right: 2.5%;
+          }
 
-        .textos h1 {
-             margin: 0;
-            font-size: 200%;
-        }
+          .textos {
+              display: flex;
+              flex-direction: column;
+              /* deixa um texto embaixo do outro */
+          }
 
-        .textos p {
-            margin-top: 0.625rem; 
-            font-size: 150%;
-        }
+          .textos h1 {
+              margin: 0;
+              font-size: 200%;
+          }
 
-         .titulo1{
-            width: 30%;
-        }
+          .textos p {
+              margin-top: 0.625rem;
+              font-size: 150%;
+          }
 
-        .parteescrita{
-            width: 40%;
-        }
+          .titulo1 {
+              width: 30%;
+          }
 
-         .ver-noticia {
-            cursor: pointer;
-        }
+          .parteescrita {
+              width: 40%;
+          }
 
-        .ver-noticia:hover {
-            text-decoration: underline;
-            color: white;
-        }
+          .ver-noticia {
+              cursor: pointer;
+          }
 
-        .ver-noticia a:link,
-        .ver-noticia a:active,
-        .ver-noticia a:visited {
-            color: white;
-            text-decoration: none;
-        }
+          .ver-noticia:hover {
+              text-decoration: underline;
+              color: white;
+          }
 
-                .mover-noticia {
-            margin-left: 50%;
-            margin-top: 5%;
-            margin-bottom: 0;
-        }
+          .ver-noticia a:link,
+          .ver-noticia a:active,
+          .ver-noticia a:visited {
+              color: white;
+              text-decoration: none;
+          }
+
+          .mover-noticia {
+              margin-left: 50%;
+              margin-top: 5%;
+              margin-bottom: 0;
+          }
+
+          .margem-meio {
+              margin-left: 1.5%;
+          }
