@@ -239,3 +239,29 @@
         .botao:hover {
             background: #15803d;
         }
+
+.container-navegacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 2.5%;
+    background-color: transparent;
+}
+
+.alinhar-direita {
+    justify-content: flex-end;
+}
+
+.botao-nav {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-nav:hover {
+    background-color: #3cb371;
+}
