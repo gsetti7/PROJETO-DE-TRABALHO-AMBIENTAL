@@ -173,6 +173,7 @@ header {
     margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .container {
     width: 90%;
     max-width: 85%;
@@ -187,6 +188,15 @@ header {
     margin: auto;
     padding: 5% 0;
 }
+=======
+        .container {
+            width: 90%;
+            max-width: 85%; /* Aumentado para permitir que o conteúdo chegue mais perto da borda esquerda */
+            margin: auto;
+            padding: 5% 0;
+        }
+
+>>>>>>> bfd1c4c756afc99506cc7f4e1b98664434f4f5d4
 
 .grid-noticias {
     display: grid;
